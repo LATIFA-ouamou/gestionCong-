@@ -1,0 +1,197 @@
+
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f9fafb;
+  color: #111827;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background:  #7AA95C;
+  padding: 1rem 2rem;
+  color: black;
+  border: 1px solid #e5e7eb;
+    border:1px solid #34ac72;
+}
+nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: black;
+}
+
+nav a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.logo {
+  font-weight: bold;
+}
+
+
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 30px 20px;
+}
+
+h1 {
+text-align: center;
+  margin-bottom: 5px;
+  font-size: 2.5rem;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.sub {
+  text-align: center;
+  color: #6b7280;
+  margin-bottom: 25px;
+}
+.stats {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.box {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  min-width: 150px;
+  flex: 1;
+  font-weight: bold;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  display: flex;
+  justify-content: space-between;
+}
+
+.el1{
+background-color:rgb(227, 181, 94) ;
+}
+.el2{
+    background-color:rgb(101, 152, 101) ;
+}
+.el3{
+    background-color:rgb(209, 131, 131) ;
+}
+.el4{
+    background-color:#91a2b9
+}
+.filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+.filters input, .filters select, .filters button {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.conges {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 50px;
+}
+
+.card {
+  border:solid #e5e7eb;
+  background:#dce6d6;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  width: 250px;
+
+
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  max-width: 200px;
+}
+
+.top img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.status {
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 12px;
+  font-weight: bold;
+ 
+}
+
+.attente {
+  background: rgb(227, 181, 94);
+  color: #b45309;
+}
+
+.approuve {
+  background: green;
+  color: white;
+}
+.actions {
+    margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.actions button {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-approve {
+  background: green;
+  color: white;
+}
+
+.btn-refuse {
+  background: #e5e7eb;
+  color: #374151;
+}
+
+.pagination {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.pagination button {
+  margin-left: 5px;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 5px;
+  background: #e5e7eb;
+}
+
+.pagination .active {
+  background: #1f2937;
+  color: white;
+}
+
+
+
+.pad{
+margin-left:30px ;
+margin-right:30px ;
+}
