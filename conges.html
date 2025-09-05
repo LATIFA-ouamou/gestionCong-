@@ -3,32 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>congé</title>
+  <title>Mes Congés</title>
   <link rel="stylesheet" href="conges.css">
+  
 </head>
 <body>
-
   <header>
-    <div class="logo">Dashboard </div>
+    <div class="logo">Dashboard RH</div>
     <nav>
-       <a  href="dash.html">Dashboard</a>
-      <a href="conges.html">Mes congés</a>
+      <a href="index.html">Dashboard</a>
+      <a href="conges.html" class="active">Mes congés</a>
       <a href="demande.html">Demande de congé</a>
       <a href="administration.html">Administration</a>
     </nav>
-    <div class="user-icon">🔔
-</div>
+    <div class="user-icon">🔔</div>
   </header>
 
   <main>
-    <h1>Mes congés</h1>
+    <h1 class="page-title">Mes congés</h1>
     <p class="subtitle">Liste de toutes vos demandes de congé</p>
 
-
-      <div class="stats">
-      <div class="box el1"  > En attente ⏳<span> 12</span></div>
-      <div class="box el2" > Approuvées ✔ <span>45</span></div>
-      <div class="box el3"> Refusées❌ <span>3</span></div>
+    <div class="stats">
+      <div class="box el1">En attente ⏳ <span>12</span></div>
+      <div class="box el2">Approuvées ✔ <span>45</span></div>
+      <div class="box el3">Refusées ❌ <span>3</span></div>
       <div class="box el4">Solde restant<span>60</span></div>
     </div>
 
@@ -37,63 +35,64 @@
         <h3>Congé d'été</h3>
         <p>Du 15 au 30 juillet 2025</p>
         <p class="statut approuve">✔ Approuvé</p>
-        <button class="modifier">Modifier</button>
-        <button class="annuler">Annuler</button>
+        <div class="buttons">
+          <button class="modifier">Modifier</button>
+          <button class="annuler">Annuler</button>
+        </div>
       </div>
 
       <div class="card">
         <h3>Congé personnel</h3>
         <p>Du 10 au 12 septembre 2025</p>
         <p class="statut attente">⏳ En attente</p>
-        <button class="modifier">Modifier</button>
-        <button class="annuler">Annuler</button>
+        <div class="buttons">
+          <button class="modifier">Modifier</button>
+          <button class="annuler">Annuler</button>
+        </div>
       </div>
 
       <div class="card">
         <h3>RTT</h3>
         <p>Le 20 août 2025</p>
         <p class="statut refuse">❌ Refusé</p>
-        <button class="modifier">Modifier</button>
-        <button class="annuler">Annuler</button>
+        <div class="buttons">
+          <button class="modifier">Modifier</button>
+          <button class="annuler">Annuler</button>
+        </div>
       </div>
     </section>
   </main>
   
-     
-
-
-<footer class="footer">
-  <div class="footer-container">
-    <div class="footer-section">
-      <h4>Ressources Humaines</h4>
-      <p>Service RH<br>
-      rh@entreprise.com<br>
-      01 23 45 67 89</p>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>Ressources Humaines</h4>
+        <p>Service RH</p>
+        <p>rh@entreprise.com</p>
+        <p>01 23 45 67 89</p>
+      </div>
+      <div class="footer-section">
+        <h4>Adresse</h4>
+        <p>123 Rue de l'Entreprise</p>
+        <p>75001 Paris</p>
+        <p>France</p>
+      </div>
+      <div class="footer-section">
+        <h4>Liens utiles</h4>
+        <a href="#">Règlement intérieur</a>
+        <a href="#">Convention collective</a>
+        <a href="#">Support IT</a>
+      </div>
+      <div class="footer-section">
+        <h4>Urgence</h4>
+        <p>En cas d'urgence :</p>
+        <p>urgence@entreprise.com</p>
+        <p>06 12 34 56 78</p>
+      </div>
     </div>
-    <div class="footer-section">
-      <h4>Adresse</h4>
-      <p>123 Rue de l’Entreprise<br>
-      75001 Paris<br>
-      France</p>
+    <div class="footer-bottom">
+      © 2025 Entreprise. Tous droits réservés.
     </div>
-    <div class="footer-section">
-      <h4>Liens utiles</h4>
-      <a href="#">Règlement intérieur</a><br>
-      <a href="#">Convention collective</a><br>
-      <a href="#">Support IT</a>
-</div>
-    <div class="footer-section">
-      <h4>Urgence</h4>
-      <p>En cas d'urgence :<br>
-      urgence@entreprise.com<br>
-      06 12 34 56 78</p>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    © 2025 Entreprise. Tous droits réservés.
-  </div>
-</footer>
-
-
+  </footer>
 </body>
 </html>

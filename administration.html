@@ -5,42 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Administration</title>
   <link rel="stylesheet" href="administration.css">
+  
 </head>
 <body>
-
   <header>
-    <div class="logo">Dashboard </div>
+    <div class="logo">Dashboard RH</div>
     <nav>
-       <a  href="dash.html">Dashboard</a>
+      <a href="index.html">Dashboard</a>
       <a href="conges.html">Mes congés</a>
       <a href="demande.html">Demande de congé</a>
-      <a href="administration.html">Administration</a>
+      <a href="administration.html" class="active">Administration</a>
     </nav>
-    <div class="user-icon">🔔
-      
-</div>
+    <div class="user-icon">🔔</div>
   </header>
 
-   
-
-
-  <!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Gestion des congés</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
   <div class="container">
     <h1>Gestion des congés</h1>
     <p class="sub">Gérez toutes les demandes de congés des employés</p>
 
     <div class="stats">
-      <div class="box el1"  > En attente ⏳ <span>12</span></div>
-      <div class="box el2" > Approuvées ✔ <span>45</span></div>
-      <div class="box el3"> Refusées❌ <span>3</span></div>
+      <div class="box el1">En attente ⏳ <span>12</span></div>
+      <div class="box el2">Approuvées ✔ <span>45</span></div>
+      <div class="box el3">Refusées ❌ <span>3</span></div>
       <div class="box el4">Total ce mois <span>60</span></div>
     </div>
 
@@ -50,7 +36,7 @@
         <option>En attente</option>
         <option>Approuvé</option>
       </select>
-<input type="text" placeholder="Rechercher un employé...">
+      <input type="text" placeholder="Rechercher un employé...">
       <button>Filtrer</button>
       <button>Exporter</button>
     </div>
@@ -58,36 +44,16 @@
     <div class="conges">
       <div class="card">
         <div class="top">
-          <img class="rounded-circle header-profile-user" src="./images/user-4.jpg" alt="Header Avatar">
+          <img class="rounded-circle header-profile-user" src="./images/user-4.jpg" alt="Marie Dubois">
           <div class="pad">
-            <strong>Marie Dubois</strong><br>
-           
-            </div>
-          <span class="status attente">Attente</span>
-        </div>
-        <p> <strong>Type:</strong> <small>Congés payés</small> </p>
-        <p> <strong>Du:</strong> <small>15 Jan 2025</small> </p>
-        <p> <strong> Au:</strong> <small>22 Jan 2025</small></p>
-        <p> <strong>Durée:</strong> <small>5 jours</small> </p>
-        <div class="actions">
-          <button class="btn-approve">✔ Approuver</button>
-          <button class="btn-refuse">✖ Refuser</button>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="top">
-           <img class="rounded-circle header-profile-user" src="./images/user-5.jpg" alt="Header Avatar">
-          <div class="pad">
-            <strong>Pierre Martin</strong><br>
-            
+            <strong>Marie Dubois</strong>
           </div>
-          <span class="status attente">Attente</span>
+          <span class="status attente">En attente</span>
         </div>
-        <p><strong>Type:</strong> <small>Congé maladie</small> </p>
-        <p> <strong>Du: </strong> <small>20 Jan 2025</small></p>
- <p> <strong>Au:</strong> <small>21 Jan 2025</small> </p>
-        <p> <strong> Durée:</strong> <small>2 jours</small></p>
+        <p><strong>Type:</strong> <small>Congés payés</small></p>
+        <p><strong>Du:</strong> <small>15 Jan 2025</small></p>
+        <p><strong>Au:</strong> <small>22 Jan 2025</small></p>
+        <p><strong>Durée:</strong> <small>5 jours</small></p>
         <div class="actions">
           <button class="btn-approve">✔ Approuver</button>
           <button class="btn-refuse">✖ Refuser</button>
@@ -96,37 +62,52 @@
 
       <div class="card">
         <div class="top">
-           <img class="rounded-circle header-profile-user" src="./images/avatar-5.jpg" alt="Header Avatar">
+          <img class="rounded-circle header-profile-user" src="./images/user-5.jpg" alt="Pierre Martin">
           <div class="pad">
-            <strong>Sophie Laurent</strong><br>
-            
+            <strong>Pierre Martin</strong>
+          </div>
+          <span class="status attente">En attente</span>
+        </div>
+        <p><strong>Type:</strong> <small>Congé maladie</small></p>
+        <p><strong>Du:</strong> <small>20 Jan 2025</small></p>
+        <p><strong>Au:</strong> <small>21 Jan 2025</small></p>
+        <p><strong>Durée:</strong> <small>2 jours</small></p>
+        <div class="actions">
+          <button class="btn-approve">✔ Approuver</button>
+          <button class="btn-refuse">✖ Refuser</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="top">
+          <img class="rounded-circle header-profile-user" src="./images/avatar-5.jpg" alt="Sophie Laurent">
+          <div class="pad">
+            <strong>Sophie Laurent</strong>
           </div>
           <span class="status approuve">Approuvé</span>
-        </div>
-<p> <strong>Type:</strong>  <small>Congés payés</small></p>
-        <p><strong>Du:</strong>  <small>25 Jan 2025</small></p>
-        <p> <strong>Au:</strong> <small>05 Fév 2025</small> </p>
-        <p> <strong>Durée: </strong><small>8 jours</small> </p>
+        </div>
+        <p><strong>Type:</strong> <small>Congés payés</small></p>
+        <p><strong>Du:</strong> <small>25 Jan 2025</small></p>
+        <p><strong>Au:</strong> <small>05 Fév 2025</small></p>
+        <p><strong>Durée:</strong> <small>8 jours</small></p>
         <div class="actions">
-          <button disabled>✔ Approuvé</button>
+          <button>✔ Approuvé</button>
           <button>👁 Voir</button>
         </div>
       </div>
 
       <div class="card">
         <div class="top">
-           <img class="rounded-circle header-profile-user" src="./images/user-4.jpg" alt="Header Avatar">
+          <img class="rounded-circle header-profile-user" src="./images/user-4.jpg" alt="Thomas Petit">
           <div class="pad">
-            <strong>Thomas Petit</strong><br>
-            
+            <strong>Thomas Petit</strong>
           </div>
-          
-          <div class="status attente">Attente</div>
+          <span class="status attente">En attente</span>
         </div>
-        <p> <strong> Type:</strong><small> RTT</small></p>
-        <p> <strong>Du: </strong><small>28 Jan 2025</small> </p>
-<p> <strong> Au: </strong><small>28 Jan 2025</small></p>
-        <p> <strong>Durée:</strong> <small> 1 jour</small></p>
+        <p><strong>Type:</strong> <small>RTT</small></p>
+        <p><strong>Du:</strong> <small>28 Jan 2025</small></p>
+        <p><strong>Au:</strong> <small>28 Jan 2025</small></p>
+        <p><strong>Durée:</strong> <small>1 jour</small></p>
         <div class="actions">
           <button class="btn-approve">✔ Approuver</button>
           <button class="btn-refuse">✖ Refuser</button>
@@ -145,7 +126,5 @@
       </div>
     </div>
   </div>
-
-  
 </body>
 </html>

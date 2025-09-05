@@ -1,185 +1,285 @@
-css
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-h1{
-text-align: center;
-  margin-bottom: 5px;
-  font-size: 2.5rem;
-  color: #2c3e50;
-  font-weight: 600;
-}
-body {
-  font-family: Arial, sans-serif;
-  background: #f9fafb;
-  color: #111827;
-}
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background:  #7AA95C;
-  padding: 1rem 2rem;
-  color: black;
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f8f2;
+      color: #2c3e50;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    /* Header styles */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #5b6258;
+      padding: 1rem 2rem;
+      color: white;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .logo {
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+    
+    nav {
+      display: flex;
+      gap: 1.5rem;
+    }
+    
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+    }
+    
+    nav a:hover, nav a.active {
+      background-color: #5a8245;
+      text-decoration: none;
+    }
+    
+    .user-icon {
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
+    
+    /* Main content */
+    main {
+      padding: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      width: 100%;
+      flex: 1;
+    }
+   
+     
+    
+    .page-title {
+       font-size: 2.2rem;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    }
+    
+    .subtitle {
+      color: #6b7280;
+      margin-bottom: 2.5rem;
+      text-align: center;
+      font-size: 1.1rem;
+    }
+    
+    /* Stats section */
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+    }
+    
+     .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    
+    .box {
+      background: #ffffff;
+      padding-top :5px; ;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    
+    .box:hover {
+      transform: translateY(-5px);
+    }
+    
+    .el1 {
+    background-color:rgb(209, 152, 47) ;
+    }
+    
+    .el2 {
+      background-color:green ;
+    }
+    
+    .el3 {
+       background-color:rgb(209, 131, 131) ;
 }
-nav a {
-  margin: 0 1rem;
-  text-decoration: none;
-  color: black;
-}
-
-nav a.active {
-  font-weight: bold;
-  text-decoration: underline;
-}
-
-.logo {
-  font-weight: bold;
-}
-
-main {
-  padding: 2rem;
-  text-align: center;
-}
-.subtitle {
-  color: #6b7280;
-  margin-bottom: 2rem;
-}
-.stats {
-  display: flex;
-  gap: 90px;
-  flex-wrap: wrap;
-  margin-bottom: 20px;
-  margin: auto;
-  justify-content: center;
-}
-
-.box {
-  background: #fff;
-  padding: 15px;
-  border-radius: 10px;
-  min-width: 150px;
-
-  font-weight: bold;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
-  display: flex;
-  justify-content: space-between;
-}
-
-.el1{
-background-color:rgb(227, 181, 94) ;
-}
-.el2{
-    background-color:rgb(101, 152, 101) ;
-}
-.el3{
-    background-color:rgb(209, 131, 131) ;
-}
-.el4{
-    background-color:#91a2b9
-}
-
-.conges-list {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 50px;
-  margin-top:100px ;
-  
-}
-.card {
-  background: #fff;
-  border: 1px solid #ccc;
-  border-left: 4px solid #5a6647;
-  padding: 1rem;
-  border-radius: 8px;
-  width: 280px;
-  text-align: left;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
- 
-}
-
-.statut {
-  font-weight: bold;
-  margin-top: 0.5rem;
-}
-
-.statut.approuve {
-  color: green;
-}
-.statut.attente {
-  color: orange;
-}
-
-.statut.refuse
-{color: red;
-  
-}
-
-button {
-  
-  margin-top: 0.5rem;
-  margin-right: 60px;
-  padding: 0.4rem 0.8rem;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-.modifier {
-  background-color: #e2e8f0;
-
-}
-
-.annuler {
-  background-color: #fecaca;
-}
-
-
-
-.footer {
-  background-color:   #7AA95C;
-  padding: 40px 20px 20px;
-  border-top: 1px solid #ccc;
-  font-family: sans-serif;
-  margin-top: 100px;
-}
-
-.footer-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: auto;
-}
-
-.footer-section {
-  flex: 1 1 200px;
-  margin: 10px;
-}
-.footer-section h6 {
-  font-weight: bold;
-  margin-bottom: 10px;
-  color: black;
-}
-
-.footer-section p,
-.footer-section a {
-  color: black;
-  font-size: 14px;
-  text-decoration: none;
-}
-
-.footer-section a:hover {
-  text-decoration: underline;
-}
-.footer-bottom {
-  text-align: center;
-  padding-top: 15px;
-  font-size: 13px;
-  color: black;
-  border-top: 1px solid #eee;
-  margin-top: 20px;
-}
+    
+    
+    .el4 {
+      background-color:#91a2b9
+    }
+    .box span {
+      display: block;
+      font-size: 2rem;
+      font-weight: bold;
+      margin-top: 0.5rem;
+      color: #2c3e50;
+    }
+    
+    /* Congés list */
+    .conges-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    
+    .card {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease;
+    }
+    
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    
+    .card h3 {
+      color: #344b26;
+      margin-bottom: 0.8rem;
+      font-size: 1.2rem;
+    }
+    
+    .card p {
+      margin-bottom: 0.5rem;
+      color: #6b7280;
+    }
+    
+    .statut {
+      display: inline-block;
+      padding: 0.3rem 0.8rem;
+      border-radius: 20px;
+      font-weight: 500;
+      margin: 0.8rem 0;
+      font-size: 0.9rem;
+    }
+    
+    .statut.approuve {
+      background-color: #c8e6c9;
+      color: #2e7d32;
+    }
+    
+    .statut.attente {
+      background-color: #ffecb3;
+      color: #f57c00;
+    }
+    
+    .statut.refuse {
+      background-color: #ffcdd2;
+      color: #c62828;
+    }
+    
+    .card .buttons {
+      display: flex;
+      gap: 0.8rem;
+      margin-top: 1rem;
+    }
+    
+    button {
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+    
+    button.modifier {
+      background-color: #e2e8f0;
+      color: #2c3e50;
+    }
+    
+    button.modifier:hover {
+      background-color: #cbd5e0;
+    }
+    
+    button.annuler {
+      background-color: #fed7d7;
+      color: #c53030;
+    }
+    
+    button.annuler:hover {
+      background-color: #feb2b2;
+    }
+    
+    /* Footer */
+    .footer {
+      background-color: #5b6258;
+      padding: 2rem 1rem 1rem;
+      margin-top: 3rem;
+      color: white;
+    }
+    
+    .footer-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .footer-section h4 {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+      color: white;
+    }
+    
+    .footer-section p, .footer-section a {
+      color: white;
+      text-decoration: none;
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+    
+    .footer-section a:hover {
+      text-decoration: underline;
+    }
+    
+    .footer-bottom {
+      text-align: center;
+      padding-top: 1.5rem;
+      margin-top: 1.5rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+      font-size: 0.9rem;
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        padding: 1rem;
+      }
+      
+      nav {
+        margin-top: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.8rem;
+      }
+      
+      .stats, .conges-list {
+        grid-template-columns: 1fr;
+      }
+      
+      .card .buttons {
+        flex-direction: column;
+      }
+    }

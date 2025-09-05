@@ -2,72 +2,67 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nouvelle demande de congé</title>
- 
-   
   <link rel="stylesheet" href="demande.css">
-   
+  
 </head>
 <body>
-
   <header>
-    <div class="logo">Dashboard </div>
+    <div class="logo">Dashboard RH</div>
     <nav>
-       <a  href="dash.html">Dashboard</a>
+      <a href="index.html">Dashboard</a>
       <a href="conges.html">Mes congés</a>
-      <a href="demande.html">Demande de congé</a>
+      <a href="demande.html" class="active">Demande de congé</a>
       <a href="administration.html">Administration</a>
     </nav>
-    <div class="user-icon">🔔
-      
-</div>
+    <div class="user-icon">🔔</div>
   </header>
-
- 
-
-
-</head>
-<body>
 
   <div class="container">
     <div class="nno">
       <h1>Nouvelle demande de congé</h1>    
       <p class="subtitle">Remplissez le formulaire ci-dessous pour soumettre votre demande de congé.</p>
     </div>
+    
     <div class="form-wrapper">
       <form class="leave-form">
         <div class="form-group">
           <div>
-            <label><strong>de début</strong> </label>
+            <label><strong>Date de début</strong></label>
             <input type="date" required>
           </div>
           <div>
-            <label> <strong>Date de fin</strong></label>
+            <label><strong>Date de fin</strong></label>
             <input type="date" required>
           </div>
         </div>
-<label> <strong>Type de congé</strong></label>
+        
+        <label><strong>Type de congé</strong></label>
         <select required>
-          <option>Sélectionnez un type</option>
+          <option value="">Sélectionnez un type</option>
           <option>Congés payés</option>
           <option>RTT</option>
           <option>Congé maladie</option>
           <option>Congé personnel</option>
         </select>
 
-        <label> <strong>Justification</strong></label>
+        <label><strong>Justification</strong></label>
         <textarea placeholder="Expliquez vos raisons..." maxlength="500"></textarea>
         <small>Maximum 500 caractères</small>
+        
         <div class="info-message">Votre demande sera évaluée. Vous recevrez une réponse par email.</div>
 
         <div class="buttons">
           <button type="submit" class="submit-btn">🚀 Soumettre la demande</button>
           <button type="reset" class="reset-btn">🔄 Réinitialiser</button>
         </div>
-      </form>
+       </form>
+       <!-- LKJLJSCO -->
 
-      <div class="sidebar">
+
+
+       <div class="sidebar">
         <h3>Mes dernières demandes</h3>
 
         <div class="request">
@@ -76,21 +71,26 @@
             <strong>Congés payés</strong><br>
             <span>15/03/2025 – 19/03/2025</span>
           </div>
-          <span class="status pending">🟠 En attente</span>
+          <span class="status pending">⏳ En attente</span>
         </div>
 
         <div class="request">
           <div class="line green"></div>
           <div>
-     <strong>Congé personnel</strong><br>
+           <strong>Congé personnel</strong><br>
             <span>08/02/2025 – 08/02/2025</span>
           </div>
           <span class="status approved">✅ Approuvé</span>
         </div>
 
       </div>
-    </div>
-  </div>
 
+    </div>
+   
+
+     
+       
+   
+  </div>
 </body>
 </html>
